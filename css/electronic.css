@@ -1,0 +1,276 @@
+:root {
+   
+    
+    --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.2);
+    --bg-color-1: #fff;
+    --bg-color-2:#eee;
+    --bg-color-3:#BBBFCA;
+    --yellow: #ffd800;
+    --green: #59b210;
+    --text-color-1:#444;
+    --text-color-2:#666;
+
+  }
+
+
+.mobile-banner{
+    padding: 2rem 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+.mob-banner{
+padding: 5px;
+width: 1100px;
+height: 250px;
+background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+display: flex;
+justify-content: space-around;
+}
+.mob-banner .mob-img{ 
+   max-width: 450px;
+   flex: 0 0 250px;
+
+}
+.mob-banner .mob-img img{
+    width: 100%; 
+}
+.mob-banner .mob-content h4{
+    font-size: 4rem;
+    color: hotpink;
+    padding-top: 20px;
+}
+.mob-banner .mob-content p{
+    font-size: 1.5rem;
+    color: #222;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+.mob-banner .mob-content small{
+    font-size: 1rem;
+    color: indigo;
+    padding-top: 20px;
+
+}
+.list-container .box-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(12.5rem, 1fr));
+    gap: .8rem;
+    position: relative;
+}
+.box-list a{
+    padding: 2rem 2rem;
+    background: linear-gradient(90deg,#03a9f4, #f441a5, #ffeb3b, #03a9f4);
+    background-size: 400%;
+    border-radius: .8rem;
+    width: 100%;
+    margin: 2rem 0;
+    text-align: center;
+    box-sizing: border-box;
+    font-size: 16px;
+    color: #fff;
+    animation: animate 8s linear infinite;
+    z-index: 1;
+    position: relative;
+}
+@keyframes animate{
+    0%{
+        background-position: 0%;
+    }
+    100%{
+        background-position: 400%;
+    }
+}
+.box-list a:before{
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    z-index: -1;
+    background: linear-gradient(90deg,#03a9f4, #f441a5, #ffeb3b, #03a9f4);
+    background-size: 400%;
+    border-radius: .8rem;
+    filter: blur(20px);
+}
+
+.phones .phone-box{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(23rem, 1fr));
+    gap: 1rem;
+}
+.phones .phone-box .phone-list{
+    background: var(--bg-color-1);
+    box-shadow: var(--box-shadow);
+    border-radius: .5rem;
+    position: relative;
+}
+.phones .phone-box .phone-list .phone-img{
+    height: 25rem;
+    padding-left: 1.7rem;
+    overflow: hidden;
+    
+    
+}
+.phones .phone-box .phone-list .phone-img img{
+    flex: 0 0 100px;
+    width: 95%;
+    padding:2rem 1rem;
+    object-fit: cover;
+}
+.phones .phone-box .phone-list .phone-img .fa-heart{
+    position: absolute;
+    top: .5rem;right:.5rem;
+    width: 4rem;
+    height: 4rem;
+    line-height: 4rem;
+    text-align: center;
+    font-size: 1.5rem;
+    background: #FF2442;
+    border-radius: 50%;
+    color: #fff;
+}
+.phones .phone-box .phone-list .phone-img .fa-heart:hover
+{
+background: #fff;
+color: #FF2442;
+}
+.phones .phone-box .phone-list .phone-content{
+    padding: 2rem;
+    padding-top: 0;
+}
+.phones .phone-box .phone-list .phone-content .stars{
+    padding: .5rem;
+    margin: .5rem;
+    width: 5rem;
+    background: var(--green);
+    border-radius: 5px;
+    color: white;
+}
+.phones .phone-box .phone-list .phone-content .stars pre{
+    font-size: 12px;
+}
+.phones .phone-box .phone-list .phone-content .stars .fa-star{
+    color: yellow;
+}
+.phones .phone-box .phone-list .phone-content h3{
+    color: #000;
+    font-size: 15px;
+}
+.phones .phone-box .phone-list .phone-content p{
+    color: #000;
+    font-size: 13px;
+}
+.phones .phone-box .phone-list .phone-content .btn{
+    padding: 1rem 2rem
+}
+.phones .phone-box .phone-list .phone-content .btn:last-child{
+    margin-left: 0rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media queries */
+@media (max-width:991px){
+    .mob-banner{
+        padding: 5px;
+        }
+} 
+    
+@media (max-width:768px){
+    .mob-banner{
+        padding: 2px 5%;
+        }
+        .mob-banner .mob-img{ 
+            max-width: 350px;
+            flex: 0 0 250px;
+         
+         }
+         .mob-banner .mob-img img{
+             width: 100%; 
+         }
+         .mob-banner .mob-content h4{
+             font-size: 3rem;
+             
+             padding-top: 50px;
+         }
+         .mob-banner .mob-content p{
+             font-size: 1.5rem;
+             
+             padding-top: 15px;
+             padding-bottom: 8px;
+         }
+         .mob-banner .mob-content small{
+             font-size: 1rem;
+             color: indigo;
+             padding-top: 10px;
+         
+         }
+} 
+
+@media (max-width:568px){
+    .mob-banner{
+        padding: 2px 3%;
+        display: flex;
+        flex-direction: column;
+        height: 150px;
+        background: #fff;
+        }
+        .mob-banner .mob-img{ 
+            max-width: 100px;
+            flex: 0 0 60px;
+            margin-top: 35px;
+         
+         }
+         
+         .mob-banner .mob-content h4{
+             font-size: 2.5rem;
+             
+             padding-top: 18    px;
+         }
+         .mob-banner .mob-content p{
+             font-size: 1rem;
+             
+             padding-top: 15px;
+             padding-bottom: 8px;
+         }
+         .mob-banner .mob-content small{
+             font-size: 1rem;
+             color: indigo;
+             padding-top: 10px;
+         
+         }
+} 
